@@ -1,7 +1,5 @@
 // Make a program that filters a list of strings and returns a list with only your friends name in it.
-
 // If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
-
 // Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 
 function friend(friends){
@@ -13,4 +11,20 @@ function friend(friends){
       }
     }
     return friendArray
+  }
+
+
+
+//   Write a function which calculates the average of the numbers in a given list.
+//   Note: Empty arrays should return 0.
+
+  function findAverage(array) {
+  let amount = 0 
+  let average = 0
+  if (array.length == 0){
+  return 0}
+else array.forEach(function(element){
+   amount += element})
+  average = amount/array.length
+ return average
   }
