@@ -101,3 +101,18 @@ function opposite(number) {
      newArray.push(y)})
       return newArray
     };
+
+
+
+
+    // Given an array of integers, return a new array with each value doubled.
+    // For example:
+    // [1, 2, 3] --> [2, 4, 6]
+    
+    function maps(x){
+        let newArray = []
+        x.forEach((e)=> { 
+          let y = e * 2 
+          newArray.push(y)})
+        return newArray
+        }
