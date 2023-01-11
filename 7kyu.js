@@ -46,20 +46,13 @@ function sum(numArray){
     let passedStudents = 0
     let scoreAve = 0 
     let rounded = 0
-  //   function filterScore(value) {
-  //   return value <= 18; 
-  // }
-  //   let filtered = list.filter(filterScore)
-  // list.forEach(function(e){if (e > 18){
-  //     list.pop(e)
-  //     list.pop(e)
-  //   }
-  //   })
-   list.forEach(function(element)
+    const passed = list.filter(element => element <= 18)
+    console.log(passed)
+   passed.forEach(function(element)
     {passedStudents += element})
-    scoreAve = passedStudents/list.length
+    scoreAve = passedStudents/passed.length
     rounded = Math.round(scoreAve)
-    if (rounded > 18) 
+    if (rounded > 18 || passed.length === 0) 
     {return 'No pass scores registered.'}
   else return rounded
   }
