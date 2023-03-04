@@ -75,6 +75,31 @@ function sum(numArray){
   };
 
 
-
-
+//BusStop Algo
+  // There is a bus moving in the city which takes and drops some people at each bus stop.
+  // You are provided with a list (or array) of integer pairs. Elements of each pair represent the number of people that get on the bus (the first item) and the number of people that get off the bus (the second item) at a bus stop.
+  // Your task is to return the number of people who are still on the bus after the last bus stop (after the last array). Even though it is the last bus stop, the bus might not be empty and some people might still be inside the bus, they are probably sleeping there :D
+  // Take a look on the test cases.
+  // Please keep in mind that the test cases ensure that the number of people in the bus is always >= 0. So the returned integer can't be negative.
+  // The second value in the first pair in the array is 0, since the bus is empty in the first bus stop.
   
+  var number = function(busStops){
+    // a) A loop will sum up the total number of onboarded passengers
+    // b) Another loop will sum up the total number of passengers that got off the bus
+    // c) The difference of the sums from both loops will be the answer
+    let passengersRiding = 0
+      for (stop of busStops){
+      passengersRiding += stop[0]
+    }
+    let passengersLeave = 0
+      for (stop of busStops){
+      passengersLeave += stop[1]
+    } 
+   return passengersRiding - passengersLeave
+  }
+  //What I have to do in the loops: 
+  // a) target index [0] of each bus stop in the first loop and sum up the
+  // passenger count of all index [0]s of the arrays (all bus stops)
+  // b) target index [1] of each bus stop in the second loop and sum up the leaving 
+  // passenger count
+  // c) add up the sums from both loops and return the remaining passengers after last stop
