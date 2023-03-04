@@ -70,21 +70,6 @@ function opposite(number) {
      return "Obese"
    }
    }
-   
- //   switch(health) {
- //       case bmi <= 18.5:
- //      return "Underweight";
- //       case bmi <= 25.0:
- //       return "Normal";
- //       case bmi <= 30.0:
- //       return "Overweight";
- //       case bmi > 30:
- //      return "Obese";
- //     }
- //   }
-
-
-
 
 
  //Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
