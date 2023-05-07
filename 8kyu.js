@@ -165,3 +165,22 @@ function opposite(number) {
     let num = parseInt(str)
      return num;
    }
+
+
+
+  //  Factors are numbers you can multiply together to get another number.
+
+  //  2 and 3 are factors of 6 because: 2 * 3 = 6
+   
+  //  You can find a factor by dividing numbers. If the remainder is 0 then the number is a factor.
+  //  You can use the mod operator (%) in most languages to check for a remainder
+
+   function checkForFactor (base, factor) {
+    // code here
+    if (base%factor == 0){
+      return true
+    }
+    else {
+      return false
+    }
+  }
