@@ -103,3 +103,26 @@ BusStop Algo
   // b) target index [1] of each bus stop in the second loop and sum up the leaving 
   // passenger count
   // c) add up the sums from both loops and return the remaining passengers after last stop
+
+
+
+
+
+
+
+
+
+
+
+  Unlocked Solutions
+  
+//   Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+// It should remove all values from list a, which are present in list b keeping their order.
+// arrayDiff([1,2],[1]) == [2]
+// If a value is present in b, all of its occurrences must be removed from the other:
+// arrayDiff([1,2,2,2,3],[2]) == [1,3]
+
+  function array_diff(a, b) {
+    return a.filter(e => !b.includes(e));
+  }
+
